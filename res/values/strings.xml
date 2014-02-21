@@ -10,5 +10,6 @@
     <string name="title_activity_new_exercise">NewExerciseActivity</string>
     <string name="title_activity_choose_cards">ChooseCardsActivity</string>
     <string name="title_activity_main_workout">MainWorkoutActivity</string>
+    <string name="title_activity_deck2_exercises">Deck2ExercisesActivity</string>
 
 </resources>

@@ -29,10 +29,12 @@ public class NewWorkoutActivity extends Activity {
 
 	    if(v.getId() == R.id.backbutton){
 	        finish(); 
-	    } else if (v.getId() == R.id.custombutton) {
-	    	Intent intent = new Intent(NewWorkoutActivity.this, DeckExercisesActivity.class);
+	    } else if (v.getId() == R.id.custombutton || v.getId() == R.id.fulldeckbutton) {
+	    	Intent intent = new Intent(NewWorkoutActivity.this, Deck4ExercisesActivity.class);
 	    		startActivity(intent);
-	    	finish();
+	    } else if (v.getId() == R.id.halfdeckbutton) {
+	    	Intent intent = new Intent(NewWorkoutActivity.this, Deck2ExercisesActivity.class);
+	    		startActivity(intent);
 	    }
 	}
 

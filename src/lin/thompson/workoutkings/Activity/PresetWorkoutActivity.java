@@ -1,12 +1,9 @@
 package lin.thompson.workoutkings.Activity;
 
 import lin.thompson.workoutkings.R;
-import lin.thompson.workoutkings.R.id;
-import lin.thompson.workoutkings.R.layout;
-import lin.thompson.workoutkings.R.menu;
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
@@ -30,7 +27,7 @@ public class PresetWorkoutActivity extends Activity {
 	    if(v.getId() == R.id.backbuttonpresetworkout){
 	        finish(); 
 	    } else if (v.getId() == R.id.custombutton) {
-	    	Intent intent = new Intent(PresetWorkoutActivity.this, DeckExercisesActivity.class);
+	    	Intent intent = new Intent(PresetWorkoutActivity.this, Deck4ExercisesActivity.class);
 	    		startActivity(intent);
 	    	finish();
 	    }

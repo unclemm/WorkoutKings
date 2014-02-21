@@ -1,27 +1,19 @@
 package lin.thompson.workoutkings.Activity;
 
-import java.util.ArrayList;
-
 import lin.thompson.workoutkings.R;
-import lin.thompson.workoutkings.R.id;
-import lin.thompson.workoutkings.R.layout;
-import lin.thompson.workoutkings.R.menu;
-
 import android.app.Activity;
-import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
-public class DeckExercisesActivity extends Activity {
+public class Deck2ExercisesActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_deck_exercises);
+		setContentView(R.layout.activity_deck2_exercises);
 	}
 
 	@Override
@@ -35,11 +27,11 @@ public class DeckExercisesActivity extends Activity {
 	    if(v.getId() == R.id.backbuttonpresetdeckexercises) {
 	        finish(); 
 	    } else if (v.getId() == R.id.newexercisebutton) {
-	    	Intent intent = new Intent(DeckExercisesActivity.this, NewExerciseActivity.class);
+	    	Intent intent = new Intent(Deck2ExercisesActivity.this, NewExerciseActivity.class);
 	    		startActivity(intent);
 	    } else if (v.getId() == R.id.readybutton) {
-	    	if(fourChecked()) {
-	    		Intent intent = new Intent(DeckExercisesActivity.this, ChooseCardsActivity.class);
+	    	if(twoChecked()) {
+	    		Intent intent = new Intent(Deck2ExercisesActivity.this, ChooseCardsActivity.class);
 	    			startActivity(intent);
 	    	} else { 
 	    		// Must check 4 exercises 
@@ -47,7 +39,7 @@ public class DeckExercisesActivity extends Activity {
 	    }
 	}
 	
-	public boolean fourChecked() {
+	public boolean twoChecked() {
 		int count = 0;
 //		ArrayList<CheckBox> tempList = new ArrayList<CheckBox>();
 //		tempList.add((CheckBox) findViewById(R.id.checkBox1));
@@ -62,7 +54,7 @@ public class DeckExercisesActivity extends Activity {
 		if(((CompoundButton) findViewById(R.id.checkBox3)).isChecked()) { count++; }
 		if(((CompoundButton) findViewById(R.id.checkBox4)).isChecked()) { count++; }
 		
-		if(count == 4) { return true; }
+		if(count == 2) { return true; }
 		else { return false; }
 	}
 }

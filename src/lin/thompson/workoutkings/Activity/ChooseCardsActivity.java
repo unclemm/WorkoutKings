@@ -30,7 +30,7 @@ public class ChooseCardsActivity extends Activity {
 	    if(v.getId() == R.id.backbuttonchoosecards){
 	        finish(); 
 	    } else if (v.getId() == R.id.nextbuttonchoosecards) {
-	    	Intent intent = new Intent(ChooseCardsActivity.this, DeckExercisesActivity.class);
+	    	Intent intent = new Intent(ChooseCardsActivity.this, Deck4ExercisesActivity.class);
 	    		startActivity(intent);
 	    	finish();
 	    }
