@@ -8,24 +8,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <Button
-        android:id="@+id/customworkoutbutton"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/presetworkoutbutton"
-        android:layout_alignRight="@+id/presetworkoutbutton"
-        android:layout_below="@+id/presetworkoutbutton"
-        android:layout_marginTop="57dp"
-        android:onClick="onClick"
-        android:text="New Workout" />
-
-    <Button
-        android:id="@+id/presetworkoutbutton"
-        android:layout_width="450dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="67dp"
-        android:onClick="onClick"
-        android:text="Preset Workout" />
+        android:text="@string/hello_world" />
 
 </RelativeLayout>
