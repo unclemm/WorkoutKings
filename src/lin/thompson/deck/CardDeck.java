@@ -49,6 +49,16 @@ public class CardDeck {
 	    
 	  }
 	  
+	  /* Adds a card to the deck */
+	  public void addCard(Card card) {
+		  deck.add(card);
+	  }
+	  
+	  /* Gets the cards */
+	  public ArrayList<Card> getCards() {
+		  return deck;
+	  }
+	  
 	  public void bubbleSort(){
 	    int k;
 	    for( int x = 0; x<deck.size(); x++){

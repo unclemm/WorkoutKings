@@ -1,12 +1,15 @@
 package lin.thompson.workoutkings.Activity;
 
+import lin.thompson.workout.Workout;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
+
+	Workout workout = new Workout();
 
 	static String[] workouts = new String[] { "Create New Workout...", "Workout 1", "Workout 2", "Workout 3", "Workout 4" };
 
@@ -19,9 +22,14 @@ public class MainActivity extends ListActivity {
 
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
-		//get selected items
 		String selectedValue = (String) getListAdapter().getItem(position);
-		Toast.makeText(this, selectedValue, Toast.LENGTH_SHORT).show();
+		if(Integer.parseInt(selectedValue) != 0) {
+			Intent intent = new Intent(MainActivity.this, NewWorkoutActivity.class);
+			startActivity(intent);
+		} else {
+			Intent intent = new Intent(MainActivity.this, MainWorkoutActivity.class);
+			startActivity(intent);
+		}
 	}
 
 }

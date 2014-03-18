@@ -9,12 +9,13 @@ public class Card {
 	  private final int number;  // between 2 and 14
 	  
 	  /* Constructor */
-	  public Card(int s, int n){
-	    suit=s;
-	    number=n;
+	  public Card(int s, int n) {
+	    suit = s;
+	    number = n;
 	  }
 	  
 	  /* Accessor methods */
+	  
 	  //Return the suit of the card.
 	  public int getSuit(){
 	    return suit;
