@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+// You should be able to see this now.
 public class MobileArrayAdapter extends ArrayAdapter<String> {
 	private final Context context;
 	private final String[] values;
