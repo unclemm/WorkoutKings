@@ -9,7 +9,7 @@
         android:targetSdkVersion="18" />
     
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-    android:targetPackage="test.Deck"
+    android:targetPackage="Deck"
     android:label="TestCard" />
 
     <application
