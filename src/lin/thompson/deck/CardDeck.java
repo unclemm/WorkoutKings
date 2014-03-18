@@ -17,6 +17,16 @@ public class CardDeck {
 	    }
 	  }
 	  
+	  //
+	  public CardDeck(int suitSize, int numOfSuits){
+		  deck = new ArrayList<Card>();
+		  for(int x = 0; x<numOfSuits; x++){
+			  for(int y = 2; y < suitSize+2; y++){
+				  deck.add(new Card(x,y));
+			  }
+		  }
+	  }
+	  
 	  
 	  /* Removes a Card from the top of the deck and returns it */
 	  public Card getTopCard(){    
