@@ -8,9 +8,6 @@ public class Card {
 	  private final int suit;  // between 0 and 3
 	  private final int number;  // between 2 and 14
 	  
-	  public static void main(String[] args){
-	  }
-	  
 	  /* Constructor */
 	  public Card(int s, int n){
 	    suit=s;
@@ -23,6 +20,9 @@ public class Card {
 	    return suit;
 	  }
 	  
+	  public String getSuitName(){
+		  return suits[suit];
+	  }
 	  //Return the number of the card.
 	  public int getNumber(){
 	    return number;
