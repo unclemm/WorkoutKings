@@ -5,6 +5,8 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 public class MainActivity extends ListActivity {
@@ -18,18 +20,22 @@ public class MainActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 
 		setListAdapter(new MobileArrayAdapter(this, workouts));
-	}
 
-	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id) {
-		String selectedValue = (String) getListAdapter().getItem(position);
-		if(Integer.parseInt(selectedValue) != 0) {
-			Intent intent = new Intent(MainActivity.this, NewWorkoutActivity.class);
-			startActivity(intent);
-		} else {
-			Intent intent = new Intent(MainActivity.this, MainWorkoutActivity.class);
-			startActivity(intent);
-		}
-	}
+		ListView lv = getListView();
+		lv.setTextFilterEnabled(true);
 
+		lv.setOnItemClickListener(new OnItemClickListener() {
+			public void onItemClick(AdapterView<?> arg0, View view, int position, long id) {
+				if(position == 1) {
+		            // "Create New Workout" was clicked   
+		            Intent intent = new Intent(view.getContext(), NewWorkoutActivity.class);
+		            startActivity(intent);
+		        } else {
+		            // Anything else was clicked    
+		            Intent intent = new Intent(view.getContext(), WorkoutActivity.class);
+		            startActivity(intent);
+		        }                 
+			}
+		});
+	}
 }

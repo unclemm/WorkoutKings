@@ -13,4 +13,12 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="30px" >
+    </TextView>
+
 </RelativeLayout>

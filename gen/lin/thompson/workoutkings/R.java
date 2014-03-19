@@ -31,30 +31,30 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f080018;
-        public static final int backbutton=0x7f080011;
+        public static final int backbutton=0x7f080012;
         public static final int backbuttonchoosecards=0x7f080002;
-        public static final int backbuttonnewexercise=0x7f08000d;
+        public static final int backbuttonnewexercise=0x7f08000e;
         public static final int backbuttonpresetdeckexercises=0x7f080005;
-        public static final int backbuttonpresetworkout=0x7f080015;
+        public static final int backbuttonpresetworkout=0x7f080016;
         public static final int checkBox1=0x7f080008;
         public static final int checkBox2=0x7f080004;
         public static final int checkBox3=0x7f080009;
         public static final int checkBox4=0x7f080007;
-        public static final int custombutton=0x7f08000e;
+        public static final int custombutton=0x7f08000f;
         public static final int editText1=0x7f08000a;
-        public static final int firstpresetworkoutbutton=0x7f080013;
-        public static final int fulldeckbutton=0x7f080010;
-        public static final int halfdeckbutton=0x7f08000f;
-        public static final int label=0x7f080017;
-        public static final int logo=0x7f080016;
+        public static final int firstpresetworkoutbutton=0x7f080014;
+        public static final int fulldeckbutton=0x7f080011;
+        public static final int halfdeckbutton=0x7f080010;
+        public static final int label=0x7f08000c;
+        public static final int logo=0x7f080017;
         public static final int newexercisebutton=0x7f080006;
         public static final int nextbuttonchoosecards=0x7f080001;
         public static final int readybutton=0x7f080003;
-        public static final int savenewexercisebutton=0x7f08000c;
-        public static final int secondpresetworkoutbutton=0x7f080012;
+        public static final int savenewexercisebutton=0x7f08000d;
+        public static final int secondpresetworkoutbutton=0x7f080013;
         public static final int textView1=0x7f08000b;
         public static final int textView2=0x7f080000;
-        public static final int thirdpresetworkoutbutton=0x7f080014;
+        public static final int thirdpresetworkoutbutton=0x7f080015;
     }
     public static final class layout {
         public static final int activity_choose_cards=0x7f030000;
@@ -65,7 +65,8 @@ public final class R {
         public static final int activity_new_exercise=0x7f030005;
         public static final int activity_new_workout=0x7f030006;
         public static final int activity_preset_workout=0x7f030007;
-        public static final int list_mobile=0x7f030008;
+        public static final int activity_workout=0x7f030008;
+        public static final int list_mobile=0x7f030009;
     }
     public static final class menu {
         public static final int choose_cards=0x7f070000;
