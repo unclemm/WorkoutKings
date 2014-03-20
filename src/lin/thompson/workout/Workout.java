@@ -42,6 +42,10 @@ public class Workout {
 	public void addCard(Card card) {
 		deck.addCard(card);
 	}
+	
+	public CardDeck getDeck() {
+		return deck;
+	}
 
 	public String toString() {
 		StringBuilder returnString = new StringBuilder();
