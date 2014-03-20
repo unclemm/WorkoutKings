@@ -1,6 +1,6 @@
 package lin.thompson.workoutkings.Activity;
 
-import lin.thompson.workoutkings.R;
+import android.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

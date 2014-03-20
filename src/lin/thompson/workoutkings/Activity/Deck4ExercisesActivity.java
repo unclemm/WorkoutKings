@@ -1,19 +1,11 @@
 package lin.thompson.workoutkings.Activity;
 
-import java.util.ArrayList;
-
-import lin.thompson.workoutkings.R;
-import lin.thompson.workoutkings.R.id;
-import lin.thompson.workoutkings.R.layout;
-import lin.thompson.workoutkings.R.menu;
-
+import android.R;
 import android.app.Activity;
-import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
 public class Deck4ExercisesActivity extends Activity {

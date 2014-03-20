@@ -2,15 +2,15 @@ package lin.thompson.workoutkings.Activity;
 
 import lin.thompson.deck.CardDeck;
 import lin.thompson.workout.Workout;
-import lin.thompson.workoutkings.R;
+import android.R;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 
 public class WorkoutActivity extends ActionBarActivity {
 	
-	Workout workout;
-	CardDeck deck;
+	private Workout workout;
+	private CardDeck deck;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

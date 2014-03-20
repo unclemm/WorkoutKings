@@ -1,10 +1,8 @@
 package lin.thompson.workoutkings.Activity;
 
-import lin.thompson.workoutkings.R;
-import lin.thompson.workoutkings.R.layout;
-import lin.thompson.workoutkings.R.menu;
-import android.os.Bundle;
+import android.R;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
 
 public class MainWorkoutActivity extends Activity {

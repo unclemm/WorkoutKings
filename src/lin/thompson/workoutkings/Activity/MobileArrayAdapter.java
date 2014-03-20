@@ -1,6 +1,6 @@
 package lin.thompson.workoutkings.Activity;
 
-import lin.thompson.workoutkings.R;
+import android.R;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
