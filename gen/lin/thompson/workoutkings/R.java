@@ -13,6 +13,11 @@ public final class R {
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    
+
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
@@ -30,7 +35,7 @@ public final class R {
         public static final int windowsmobile_logo=0x7f020006;
     }
     public static final class id {
-        public static final int action_settings=0x7f080018;
+        public static final int action_settings=0x7f080019;
         public static final int backbutton=0x7f080012;
         public static final int backbuttonchoosecards=0x7f080002;
         public static final int backbuttonnewexercise=0x7f08000e;
@@ -40,13 +45,14 @@ public final class R {
         public static final int checkBox2=0x7f080004;
         public static final int checkBox3=0x7f080009;
         public static final int checkBox4=0x7f080007;
+        public static final int container=0x7f080017;
         public static final int custombutton=0x7f08000f;
         public static final int editText1=0x7f08000a;
         public static final int firstpresetworkoutbutton=0x7f080014;
         public static final int fulldeckbutton=0x7f080011;
         public static final int halfdeckbutton=0x7f080010;
         public static final int label=0x7f08000c;
-        public static final int logo=0x7f080017;
+        public static final int logo=0x7f080018;
         public static final int newexercisebutton=0x7f080006;
         public static final int nextbuttonchoosecards=0x7f080001;
         public static final int readybutton=0x7f080003;
@@ -89,6 +95,7 @@ public final class R {
         public static final int title_activity_new_workout=0x7f050003;
         public static final int title_activity_preset_deck_exercises=0x7f050005;
         public static final int title_activity_preset_workout=0x7f050004;
+        public static final int title_activity_workout=0x7f05000a;
     }
     public static final class style {
         /** 

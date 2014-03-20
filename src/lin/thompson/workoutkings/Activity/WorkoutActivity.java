@@ -3,18 +3,9 @@ package lin.thompson.workoutkings.Activity;
 import lin.thompson.deck.CardDeck;
 import lin.thompson.workout.Workout;
 import lin.thompson.workoutkings.R;
-import lin.thompson.workoutkings.R.id;
-import lin.thompson.workoutkings.R.layout;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.Menu;
+import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
 
 public class WorkoutActivity extends ActionBarActivity {
 	

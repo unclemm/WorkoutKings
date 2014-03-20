@@ -8,9 +8,9 @@ import lin.thompson.deck.Exercise;
 
 public class Workout {
 	
-	public String name;
-	public CardDeck deck;
-	public ArrayList<Exercise> exercises;
+	private String name;
+	private CardDeck deck;
+	private ArrayList<Exercise> exercises;
 	
 	public Workout(String name, CardDeck deck) {
 		this.name = name;
