@@ -6,8 +6,8 @@ public interface DeckFactory {
 	
 	public CardDeck initializeCardDeck();
 	
-	public String getExerciseName();
+	public String getExerciseName(String suit);
 	
-	public String getNumOfReps();
+	public String getNumOfReps(String cardNumber);
 	
 }

@@ -1,10 +1,10 @@
 package lin.thompson.deck;
 
+import lin.thompson.global.ConstantVariables;
+
 public class Card {
 	
-	  private static String faces[] = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
-	  private static String suits[] = {"Clubs", "Diamonds", "Hearts", "Spades"};
-	  
+	
 	  private final int suit;  // between 0 and 3
 	  private final int number;  // between 2 and 14
 	  
@@ -22,7 +22,7 @@ public class Card {
 	  }
 	  
 	  public String getSuitName(){
-		  return suits[suit];
+		  return ConstantVariables.suits[suit];
 	  }
 	  //Return the number of the card.
 	  public int getNumber(){
@@ -31,7 +31,7 @@ public class Card {
 	  
 	  /* Returns string representation of a card */
 	  public String toString(){
-	    return faces[number-2]+" of "+suits[suit];
+	    return ConstantVariables.faces[number-2]+" of "+ConstantVariables.suits[suit];
 	  }
 	  
 	  public int compareTo(Object obj){
