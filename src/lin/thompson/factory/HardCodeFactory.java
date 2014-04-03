@@ -10,9 +10,9 @@ public class HardCodeFactory implements DeckFactory{
 		return deck;
 	}
 	
-	public ____ getCardPicture(String suit, String number) {
+	//public ____ getCardPicture(String suit, String number) {
 		
-	}
+	//}
 	
 	@Override
 	public String getExerciseName(String suit) {
